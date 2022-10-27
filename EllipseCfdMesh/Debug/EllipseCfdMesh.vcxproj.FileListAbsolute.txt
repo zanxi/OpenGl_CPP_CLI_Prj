@@ -1,0 +1,4 @@
+C:\_2022___\_Rabota__HH__Source_4__\CFD-Mesh-Techniques-master\EllipseCfdMesh\Debug\EllipseCfdMesh.vcxproj.AssemblyReference.cache
+C:\_2022___\_Rabota__HH__Source_4__\CFD-Mesh-Techniques-master\EllipseCfdMesh\Debug\EllipseCfdMesh.vcxproj.SuggestedBindingRedirects.cache
+C:\_2022___\_Rabota__HH__Source_4__\CFD-Mesh-Techniques-master\EllipseCfdMesh\Debug\EllipseCfdMesh.Form1.resources
+C:\_2022___\_Rabota__HH__Source_4__\CFD-Mesh-Techniques-master\EllipseCfdMesh\Debug\EllipseCfdMesh.vcxproj.GenerateResource.cache

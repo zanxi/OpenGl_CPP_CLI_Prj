@@ -1,0 +1,117 @@
+  EllipseCfdMesh.Form1.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly EllipseCfdMesh, Version=0.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class OpenGLForm.COpenGL: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.NativeWindow
+    Void .ctor(System.Windows.Forms.Panel, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Render(): PrivateScope, Public, HideBySig
+    SwapOpenGLBuffers(): PrivateScope, Public, HideBySig
+    InitGL(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ExtraLib.Point2f: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single x : Public
+    Single y : Public
+Class ExtraLib.Quat4f: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single w : Public
+Class ExtraLib.Vector3f: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single x : Public
+    Single y : Public
+    Single z : Public
+  Methods:
+    cross(Vector3f, Vector3f, Vector3f): PrivateScope, Public, Static, HideBySig
+    dot(Vector3f, Vector3f): PrivateScope, Public, Static, HideBySig
+    length(): PrivateScope, Public, HideBySig
+Class ExtraLib.arcball: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setBounds(Single, Single): PrivateScope, Public, HideBySig
+    click(Point): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    drag(Point, Quat4f): PrivateScope, Public, HideBySig
+Class ExtraLib.Matrix4f: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ExtraLib.Vector3f Pan 'set' : 
+    Single Scale 'set' : 
+    ExtraLib.Quat4f Rotation 'set' : 
+  Methods:
+    get_Renamed(Single[]): PrivateScope, Public, HideBySig
+    SetIdentity(): PrivateScope, Public, HideBySig
+    set_Renamed(Matrix4f): PrivateScope, Public, HideBySig
+    MatrixMultiply(Matrix4f, Matrix4f): PrivateScope, Public, HideBySig
+    set_Rotation(Quat4f): PrivateScope, Public, HideBySig, SpecialName
+    set_Scale(Single): PrivateScope, Public, HideBySig, SpecialName
+    set_Pan(Vector3f): PrivateScope, Public, HideBySig, SpecialName
+Class ExtraLib.MouseControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Control): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Control Control 'get set' : 
+  Events:
+    System.Windows.Forms.MouseEventHandler MouseWheelDown: SpecialName
+    System.Windows.Forms.MouseEventHandler MouseWheelUp: SpecialName
+    System.Windows.Forms.MouseEventHandler MiddleMouseUp: SpecialName
+    System.Windows.Forms.MouseEventHandler MiddleMouseDown: SpecialName
+    System.Windows.Forms.MouseEventHandler RightMouseUp: SpecialName
+    System.Windows.Forms.MouseEventHandler RightMouseDown: SpecialName
+    System.Windows.Forms.MouseEventHandler LeftMouseUp: SpecialName
+    System.Windows.Forms.MouseEventHandler LeftMouseDown: SpecialName
+    System.EventHandler MiddleClick: SpecialName
+    System.EventHandler RightClick: SpecialName
+    System.EventHandler LeftClick: SpecialName
+  Methods:
+    add_LeftClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LeftClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RightClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RightClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_MiddleClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_MiddleClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LeftMouseDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LeftMouseDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_LeftMouseUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_LeftMouseUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RightMouseDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RightMouseDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RightMouseUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RightMouseUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_MiddleMouseDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_MiddleMouseDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_MiddleMouseUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_MiddleMouseUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_MouseWheelUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_MouseWheelUp(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_MouseWheelDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_MouseWheelDown(MouseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_Control(): PrivateScope, Public, HideBySig, SpecialName
+    set_Control(Control): PrivateScope, Public, HideBySig, SpecialName
+    AddControl(Control): PrivateScope, Public, HideBySig
+Class EllipseCfdMesh.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    OpenGLForm.COpenGL OpenGL1 : Public
